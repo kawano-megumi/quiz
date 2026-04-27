@@ -89,6 +89,19 @@ h1 {
   background: #357abd;
 }
 
+#checkBtn {
+  padding: 10px 20px;
+  border: none;
+  background: orange;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checkBtn:hover {
+  background: rgb(227, 148, 0);
+}
+
 .result-container {
   background: #ffffff;
   padding: 40px;
