@@ -29,7 +29,7 @@ const quizDatas = [
 	{
 		question: "JavaScriptの役割は？",
 		choices: ["見た目", "構造", "動き"],
-		answer: 3
+		answer: 2
 	}
 ];
 
