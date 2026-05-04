@@ -108,7 +108,6 @@ checkBtn.addEventListener('click', ()=> {
 		document.getElementById("nextBtn").disabled = false;
 		document.getElementById("checkBtn").disabled = true;
 		score++;
-		console.log(score);
 	} else {
 		document.getElementById("result").innerHTML = "<span class='mistake'>×不正解！</span>";
 		document.getElementById("nextBtn").disabled = false;
@@ -123,10 +122,9 @@ const nextBtn = document.getElementById("nextBtn");
 nextBtn.addEventListener('click', () => {
 	currentIndex++;
 	if (currentIndex >= quizDatas.length) {
-		console.log(score);
-		// sessionStorage.setItem('score', score);
-		// sessionStorage.setItem('max', quizDatas.length);
-		// location.href = 'goal.html';
+		sessionStorage.setItem('score', score);
+		sessionStorage.setItem('max', quizDatas.length);
+		location.href = 'goal.html';
 		return;
 	}
 	displayQuestion();
