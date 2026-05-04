@@ -60,7 +60,7 @@ h1 {
 
 .choice {
   background: #e3e7ee;
-  margin: 10px 0;
+  margin: 10px 5px;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -82,10 +82,15 @@ h1 {
   background: #4a90e2;
   color: white;
   border-radius: 5px;
+}
+#nextBtn:not(:disabled) {
   cursor: pointer;
 }
-
-#nextBtn:hover {
+#nextBtn:disabled,
+#checkBtn:disabled {
+	background-color: #d8d8d8;
+}
+#nextBtn:not(:disabled):hover {
   background: #357abd;
 }
 
@@ -95,10 +100,12 @@ h1 {
   background: orange;
   color: white;
   border-radius: 5px;
+}
+#checkBtn:not(:disabled) {
   cursor: pointer;
 }
 
-#checkBtn:hover {
+#checkBtn:not(:disabled):hover {
   background: rgb(227, 148, 0);
 }
 
@@ -142,4 +149,11 @@ h1 {
 
 #restartBtn:hover {
   background: #357abd;
+}
+
+.correct {
+  color: blue;
+}
+.mistake {
+  color: red;
 }
